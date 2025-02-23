@@ -1,0 +1,16 @@
+name: jeb1444
+channels:
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - numpy
+  - scipy
+  - matplotlib
+  - ipykernel
+  - conda-forge::pywavelets
+  - tqdm
+  - numba
+  - conda-forge::joblib
+  - scikit-learn
+  - ipywidgets
+prefix: /home/connor/miniconda3/envs/jeb1444
