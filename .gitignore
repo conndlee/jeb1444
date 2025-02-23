@@ -1,0 +1,14 @@
+# Byte-compiled files and caches
+__pycache__/
+*.py[cod]
+
+# Virtual environment directories (adjust as needed)
+venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+#idk
+*.png
+phase1.ipynb
