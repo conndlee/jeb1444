@@ -306,6 +306,8 @@ def plot_complexity(c_values, delta_ratio_values, measure_x1, measure_x2, measur
         title = "Max Lyapunov Exponent"
         zero = calibrate_lyapexp()
         print(zero)
+        plot_x1 = measure_x1
+        plot_x2 = measure_x2
         plot_x1 = np.clip(measure_x1, zero, None)
         plot_x2 = np.clip(measure_x2, zero, None)
         
@@ -316,7 +318,8 @@ def plot_complexity(c_values, delta_ratio_values, measure_x1, measure_x2, measur
         plot_x2 = measure_x2
 
     
-    plt.figure(figsize=(12, 5))
+    # plt.figure(figsize=(12, 5))
+    plt.figure(figsize=(24,10))
     
     # x2
     plt.subplot(1, 2, 1)
