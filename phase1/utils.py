@@ -153,7 +153,7 @@ def wavelet_freq_and_R(t_span, initial_state, t_eval, k1, k2, c, wavelet='cmor1.
 def run_experiment_parallel(resolution=100, transformation="hilbert", n_jobs=4, wavelet="cmor1.0-0.1", scale=10):
 
     k1 = -1.4 
-    c_values = np.linspace(0, 1, resolution)              
+    c_values = np.linspace(0, 0.1, resolution)              
     delta_ratio_values = np.linspace(0, 1.05, resolution)    
 
     # Arrays to store metrics.
@@ -164,7 +164,7 @@ def run_experiment_parallel(resolution=100, transformation="hilbert", n_jobs=4, 
     
     # Simulation settings.
     t_span = (0, 40)                                  # Total simulation time.
-    t_eval = np.linspace(t_span[0], t_span[1], 100)    # Evaluation times.
+    t_eval = np.linspace(t_span[0], t_span[1], 500)    # Evaluation times.
     initial_state = np.array([0.001, 0.001, 0.001, 0.001])  
 
     # Loop over the grid.
